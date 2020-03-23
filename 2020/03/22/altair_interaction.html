@@ -264,10 +264,10 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-6b246aae0cab4b9c8e524f134beada12"></div>
+<div id="altair-viz-36a6302d22414b4d8cf3f911189a47b9"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
-    const outputDiv = document.getElementById("altair-viz-6b246aae0cab4b9c8e524f134beada12");
+    const outputDiv = document.getElementById("altair-viz-36a6302d22414b4d8cf3f911189a47b9");
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
       "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
@@ -396,10 +396,10 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-958379dd87224541891699db1d1d39f4"></div>
+<div id="altair-viz-be91482dfb0c4f449405039e16219788"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
-    const outputDiv = document.getElementById("altair-viz-958379dd87224541891699db1d1d39f4");
+    const outputDiv = document.getElementById("altair-viz-be91482dfb0c4f449405039e16219788");
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
       "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
@@ -482,57 +482,18 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-517206693e99&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> alt.hconcat(
+</span><span class="ansi-green-intense-fg ansi-bold">      2</span>   plot<span class="ansi-blue-fg">(</span>alt<span class="ansi-blue-fg">.</span>selection_single<span class="ansi-blue-fg">(</span>on<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;mouseover&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>properties<span class="ansi-blue-fg">(</span>title<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;Single (Mouseover)&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span>   plot<span class="ansi-blue-fg">(</span>alt<span class="ansi-blue-fg">.</span>selection_multi<span class="ansi-blue-fg">(</span>on<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;mouseover&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>properties<span class="ansi-blue-fg">(</span>title<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;Multi (Shift-Mouseover)&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> )
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-
-<div id="altair-viz-d6210fd66703431e8e85495593a67aa7"></div>
-<script type="text/javascript">
-  (function(spec, embedOpt){
-    const outputDiv = document.getElementById("altair-viz-d6210fd66703431e8e85495593a67aa7");
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.0.2?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () => resolve(paths[lib]);
-        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName("head")[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === "function") {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript("vega")
-        .then(() => loadScript("vega-lite"))
-        .then(() => loadScript("vega-embed"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"mark": "circle", "encoding": {"color": {"condition": {"type": "ordinal", "field": "Cylinders", "selection": "selector005"}, "value": "grey"}, "opacity": {"condition": {"value": 0.8, "selection": "selector005"}, "value": 0.1}, "x": {"type": "quantitative", "field": "Horsepower"}, "y": {"type": "quantitative", "field": "Miles_per_Gallon"}}, "height": 180, "selection": {"selector005": {"type": "single", "on": "mouseover"}}, "title": "Single (Mouseover)", "width": 240}, {"mark": "circle", "encoding": {"color": {"condition": {"type": "ordinal", "field": "Cylinders", "selection": "selector006"}, "value": "grey"}, "opacity": {"condition": {"value": 0.8, "selection": "selector006"}, "value": 0.1}, "x": {"type": "quantitative", "field": "Horsepower"}, "y": {"type": "quantitative", "field": "Miles_per_Gallon"}}, "height": 180, "selection": {"selector006": {"type": "multi", "on": "mouseover"}}, "title": "Multi (Shift-Mouseover)", "width": 240}], "data": {"url": "https://vega.github.io/vega-datasets/data/cars.json"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json"}, {"mode": "vega-lite"});
-</script>
+<span class="ansi-red-fg">NameError</span>: name &#39;alt&#39; is not defined</pre>
 </div>
-
 </div>
 
 </div>
