@@ -11,6 +11,17 @@
         
     
   
+    
+        ,"post1": {
+            "title": "Interactive Map - Confirmed Cases in the US by State",
+            "content": "Click On State To Filter Chart Below . NB: Cruise ship, the &quot;Diamond Princess&quot; is represented by state = DP . Prepared by Asif Imran1 . . Source: &quot;2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE&quot; GitHub repository. This code is provided under the BSD-3 License.&#8617; . |",
+            "url": "https://psuman.github.io/covid19-analysis/growth-map-us-states/",
+            "relUrl": "/growth-map-us-states/",
+            "date": " • Mar 15, 2020"
+        }
+        
+    
+  
 
   
   
